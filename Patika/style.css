@@ -1,0 +1,949 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+.body{
+    height: 2403px;
+}
+
+.header{
+    background-color: white;
+    position: fixed;
+    margin: 0 auto;
+    height: 112px;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1148px;
+}
+
+.menu-bar{
+    display: none;
+}
+.left-bar{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.left-bar .navbar-item-active a{
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -0.05em;
+    font-weight:600;
+    font-size: 0.875rem;
+    color: var(--black-lighter) !important;
+    text-decoration: underline #febf5e 3px;
+    ;
+}
+
+.left-bar .navbar-item a{
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--black-lighter) !important;
+    text-decoration: none;
+}
+
+.right-bar{
+    display: flex;
+    align-items: center;
+}
+
+.right-bar .member{
+    display: flex;
+    flex-direction: column;
+}
+
+.member{
+    display: flex;
+}
+
+.member .member-name .member-name-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 3px;
+}
+
+.member .member-name .member-name-item h3{
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.right-bar .member .coin-health{
+    display: flex;
+    padding: 0 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.right-bar .member .coin-health .coin-health-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.right-bar .online p{
+    letter-spacing: -0.05em;
+}
+
+.right-bar .online{
+    padding-left: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.right-bar .online img{
+    width: 19px;
+}
+
+.right-bar .member .coin-health .coin-health-item img{
+    width: 14px;
+}
+
+.right-bar .member .coin-health .coin-health-item h4{
+    font-family: "Press Start 2P", cursive;
+    color: #febf5e;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* main */
+
+.main{
+    margin: 0 auto;
+    padding: 150px 15px 0;
+    max-width: 1148px;
+}
+
+.info{
+    display: flex;
+    gap: 30px;
+    padding:10px ;
+
+}
+.info-item-title-left{
+    display: flex;
+    gap: 8px;
+}
+.info-item{
+    background-color:rgb(241, 241, 241);
+    width: 547px;
+    padding: 20px;  
+    height: 158px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    gap: auto;
+}
+
+
+.info-item .info-button button{
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight:400;
+    border: none;
+    color: white;
+    background-color: #444bff;
+    padding: 8px 20px ;
+    float: right;
+    right: 0px;
+    justify-content: flex-end;
+}
+
+.info-item-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-item-card{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    letter-spacing: -0.04em;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-item-card img{
+    width: 20px;
+}
+
+.info-item-card p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.04em;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.info-item-title-left{
+    display: flex;
+    gap: 8px;
+}
+
+.info-item-title-left h3{
+    font-family: "Roboto Mono", monospace;
+    font-weight:600;
+    font-size: 1.0rem;
+}
+
+.info-header{
+    margin-top: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-header h1{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 100;
+}
+
+.info-header .lan{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.info-header h1{
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+ 
+
+.info-header .lan h4{
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.selector{
+    padding:  20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.selector .selector-item-active p{
+    background-color: #f8e6ca;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px;
+    border:2px solid #febf5e;
+    gap: 12px;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+.selector .selector-item p{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px;
+    border:2px solid #febf5e;
+    gap: 12px;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+
+
+
+.kariyer-patikasi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+.up{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.up-item{
+    display: flex;
+    gap: 8px;
+}
+
+.up-item .star{
+    display: flex;align-items: center;
+    flex-direction: row;
+}
+
+.up-item  p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+.up-item .star svg{
+    width: 16px;
+}
+
+.up-item-1 h3{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: rgb(137, 137, 137) !important;
+}
+
+.up-item-2 h3{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    color: rgb(0, 0, 0) !important;
+}
+
+.kariyer-patikasi-item{
+    width: 192px;
+    background-color:#f8e6ca ;
+    padding: 20px;
+    border: 4px solid #f8e6ca;
+    display: flex;
+    flex-direction: column;  
+    gap: 8px; 
+}
+
+.down-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.down-item img{
+    width: 16px;
+    height: 16px;
+} 
+
+.down-item p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.ders{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+.ders-patikasi-item{
+    width: 192px;
+    background-color: rgb(215, 233, 247);
+    padding: 20px;
+    border: 4px solid rgb(215, 233, 247);
+    display: flex;
+    flex-direction: column;  
+    gap: 8px; 
+}
+
+.footer{
+    padding: 20px 0;
+}
+
+.footer-up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.footer-up-item{
+    display: flex;
+    gap:12px ;
+}
+
+.footer-up-item-right{
+    display: flex;
+    gap:32px ;
+}
+
+.footer-up-item p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+hr{
+    margin-bottom: 8px;
+}
+
+.footer-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-down-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-down-item .fo{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.footer-down-item .fm{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.footer-down-item h4{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.cookies{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    align-items: center;
+    background-color: white;
+    bottom: 0;
+    padding: 17px 15px ;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cookies p a{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #444bff;
+    letter-spacing: -0.05em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cookies button{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    font-weight:400;
+    letter-spacing: -0.05em;
+    border: none;
+    color: white;
+    background-color: #444bff;
+    padding: 5px 10px ;
+    float: right;
+    right: 0px;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width:768px){
+    .header{
+        background-color: white;
+        border-bottom: 1px solid #e5e5e5;
+        position: fixed;
+        margin: 0 auto;
+        height: 66px;
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 706px;
+    }
+
+    .menu-bar{
+        display: flex;
+    }
+    .left-bar{
+        gap: 32px;
+    }
+    .navbar-item{
+        display: none;
+    }
+
+    .navbar-item-active{
+        display: none;
+    }
+
+    .right-bar{
+        display: none;
+    }
+
+    .main{
+        margin: 0 auto;
+        padding: 116px 0 0;
+        max-width: 1148px;
+    }
+
+    .info{
+        display: flex;
+        gap: 30px;
+        padding:25px ;
+    }
+
+    .info-item{
+        background-color:rgb(241, 241, 241);
+        width: 547px;
+        padding: 20px;  
+        height: 182px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+        gap: auto;
+    }
+
+    .info-header{
+        margin-top: 4px;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info-header h1{
+        font-family: "Roboto Mono", monospace;
+        font-weight: 100;
+        font-size: 28px;
+    }
+    .selector{
+        padding:  20px 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .kariyer-patikasi{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        margin: 24px 25px;
+        justify-content: space-between;
+    }
+    
+    .up{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .up-item{
+        display: flex;
+        gap: 8px;
+    }
+    
+    .up-item .star{
+        display: flex;align-items: center;
+        flex-direction: row;
+    }
+    
+    .up-item  p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+    }
+    .up-item .star svg{
+        width: 16px;
+    }
+    
+    .up-item-1 h3{
+        font-family: "Roboto Mono", monospace;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+        color: rgb(137, 137, 137) !important;
+    }
+    
+    .up-item-2 h3{
+        font-family: "Roboto Mono", monospace;
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        color: rgb(0, 0, 0) !important;
+    }
+    
+    .kariyer-patikasi-item{
+        width: 170px;
+        background-color:#f8e6ca ;
+        padding: 20px;
+        border: 4px solid #f8e6ca;
+        display: flex;
+        flex-direction: column;  
+        gap: 8px; 
+    }
+    
+    .down-item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .down-item img{
+        width: 16px;
+        height: 16px;
+    } 
+    
+    .down-item p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+    }
+    
+    .ders{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+        margin-bottom: 20px;
+        padding: 10px 25px;
+        margin-bottom: 80px;
+    }
+    
+    .ders-patikasi-item{
+        width: 170px;
+        background-color: rgb(215, 233, 247);
+        padding: 20px;
+        border: 4px solid rgb(215, 233, 247);
+        display: flex;
+        flex-direction: column;  
+        gap: 8px; 
+    }
+
+    .cookies{
+        display: none;
+    }
+    
+    .footer{
+        background-color: #f8e6ca;
+        padding: 25px;
+        
+    }
+    
+    .footer-up{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 16px;
+        gap: 20px;
+    }
+    
+    .footer-up-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:16px ;
+    }
+    
+    .footer-up-item-right{
+        display: flex;
+        gap:32px ;
+        padding-top: 32px;
+    }
+    
+    .footer-up-item p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    hr{
+       display: none;
+    }
+    
+    .footer-down{
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-down-item{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .footer-down-item .fm{
+        display: flex;
+        align-items: center;
+    }
+    .footer-down-item .fo{
+        display: none;
+    }
+    
+    .footer-down-item h4{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:412px){
+    .header{
+        background-color: white;
+        border-bottom: 1px solid #e5e5e5;
+        position: fixed;
+        margin: 0 auto;
+        height: 66px;
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 348px;
+    }
+
+    .menu-bar{
+        display: flex;
+    }
+    .left-bar{
+        gap: 32px;
+    }
+    .navbar-item{
+        display: none;
+    }
+
+    .navbar-item-active{
+        display: none;
+    }
+
+    .right-bar{
+        display: none;
+    }
+
+    .main{
+        margin: 0 auto;
+        padding: 116px 0 0;
+        max-width: 1148px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        padding:25px ;
+    }
+
+    .info-item{
+        background-color:rgb(241, 241, 241);
+        width: auto;
+        padding: 25px;  
+        height: 182px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+        gap: auto;
+    }
+
+    .info-header{
+        margin-top: 0;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info-header h1{
+        font-family: "Roboto Mono", monospace;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .selector{
+        padding:  20px 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .kariyer-patikasi{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        margin: 24px 25px;
+        justify-content: space-between;
+    }
+    
+    .up{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .up-item{
+        display: flex;
+        gap: 8px;
+    }
+    
+    .up-item .star{
+        display: flex;align-items: center;
+        flex-direction: row;
+    }
+    
+    .up-item  p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+    }
+    .up-item .star svg{
+        width: 16px;
+    }
+    
+    .up-item-1 h3{
+        font-family: "Roboto Mono", monospace;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+        color: rgb(137, 137, 137) !important;
+    }
+    
+    .up-item-2 h3{
+        font-family: "Roboto Mono", monospace;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        color: rgb(0, 0, 0) !important;
+    }
+    
+    .kariyer-patikasi-item{
+        width: 125px;
+        background-color:#f8e6ca ;
+        padding: 20px;
+        border: 4px solid #f8e6ca;
+        display: flex;
+        flex-direction: column;  
+        gap: 8px; 
+    }
+    
+
+    
+    .down-item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .down-item img{
+        width: 12px;
+        height: 12px;
+    } 
+    
+    .down-item p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .ders{
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+        margin-bottom: 20px;
+        padding: 10px 25px;
+        margin-bottom: 80px;
+    }
+    
+    .ders-patikasi-item{
+        width: 125px;
+        background-color: rgb(215, 233, 247);
+        padding: 20px;
+        border: 4px solid rgb(215, 233, 247);
+        display: flex;
+        flex-direction: column;  
+        gap: 8px; 
+    }
+
+    .cookies{
+        display: none;
+    }
+    
+    .footer{
+        background-color: #f8e6ca;
+        padding: 25px;
+        
+    }
+    
+    .footer-up{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 16px;
+        gap: 20px;
+    }
+    
+    .footer-up-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:16px ;
+    }
+    
+    .footer-up-item-right{
+        display: flex;
+        gap:32px ;
+        padding-top: 32px;
+    }
+    
+    .footer-up-item p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    hr{
+       display: none;
+    }
+    
+    .footer-down{
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-down-item{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .footer-down-item .fm{
+        display: flex;
+        align-items: center;
+    }
+    .footer-down-item .fo{
+        display: none;
+    }
+    
+    .footer-down-item h4{
+        display: none;
+    }
+
+    .srch{
+        display: none;
+    }
+}
