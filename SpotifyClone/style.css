@@ -507,6 +507,7 @@
 
   .footer {
     position: fixed;
+    align-items: center;
     width:calc(100% - 39px) ;
     justify-content: space-between;
     padding: 11px 24px 7px 15px;
@@ -560,6 +561,7 @@
     white-space: nowrap;
     border: none;
     font-size: 0.9em;
+    height: 48px;
   }
 }
 
