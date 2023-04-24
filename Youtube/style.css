@@ -124,13 +124,26 @@
   cursor: pointer;
 }
 
-.profile svg {
+.profile-addvid {
   padding: 8px;
+  display: flex;
+  align-items: center;
   border-radius: 50px;
-  padding: 8px;
 }
 
-.profile svg:hover{
+.profile-notf {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.profile-addvid:hover{
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.profile-notf:hover{
   cursor: pointer;
   background-color: #f0f0f0;
 }

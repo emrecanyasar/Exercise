@@ -33,7 +33,7 @@
 .sidebar {
   z-index: 1;
   position: fixed;
-  height: calc(100% - 66px);
+  height: calc(100% - 55px);
   left: 0;
   background-color: #000000;
   width: 230px;
@@ -42,6 +42,9 @@
   justify-content: space-between;
 }
 
+.logo:hover{
+  cursor: pointer;
+}
 .main-start {
   display: flex;
   padding: 24px;
@@ -73,6 +76,11 @@
   font-size: 13px;
   color: rgb(233, 231, 231);
 }
+
+.sidebar-item-main h3:hover {
+  cursor: pointer;
+}
+
 .sidebar-item svg {
   color: rgb(175, 174, 174);
 }
@@ -80,6 +88,11 @@
 .sidebar-item h3 {
   font-size: 13px;
   color: rgb(160, 160, 160);
+}
+
+.sidebar-item h3:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .sidebar .main-end {
@@ -114,14 +127,19 @@
 
 .sidebar .main-end .language button {
   display: flex;
-  align-items: center;
   padding: 6px 15px 6px 15px;
   color: white;
   gap: 6px;
   border-radius: 15px;
   border: 0.1px solid white;
   font-size: 13px;
-  background-color: #121212;
+  background-color: black;
+}
+
+.sidebar .main-end .language button:hover {
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 14px;
 }
 
 /* navbar */
@@ -157,10 +175,25 @@
   border: none;
   background: none;
 }
+
+.header .navbar-item .passive:hover {
+  cursor: pointer;
+  padding: 8px 12px;
+  min-block-size: 48px;
+  color: white;
+  font-size: 14px;
+}
+
 .header .navbar-item .active {
   padding: 8px 32px;
   border-radius: 500px;
   min-block-size: 48px;
+  border-style: none;
+}
+.header .navbar-item .active:hover {
+  cursor: pointer;
+  padding: 10px 34px;
+  font-size: 14px;
 }
 
 .header .navbar-item .app {
@@ -183,11 +216,15 @@
 .header .navbar-item-item a {
   text-decoration: none;
   color: rgb(175, 174, 174);
+  display: none;
 }
 
-.header .navbar-item a {
+
+
+.header .navbar-item .divider {
   text-decoration: none;
   color: rgb(175, 174, 174);
+  display: none;
 }
 
 .header .navbar-item {
@@ -225,8 +262,22 @@
   color: rgb(175, 174, 174);
   font-size: 14px;
 }
+
+.playlist .main-title a:hover {
+  cursor: pointer;
+  text-decoration:underline;
+  color: rgb(175, 174, 174);
+  font-size: 14px;
+}
+
 .playlist .main-title h4 {
   text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.playlist .main-title h4:hover {
+  cursor: pointer;
+  text-decoration:underline;
   color: white;
   font-size: 20px;
 }
@@ -272,13 +323,42 @@
 }
 
 .playlist-item .card {
-  background-color: #131313;
+  background-color: #181818;
   padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 18px;
   max-width: 150px;
   border-radius: 5px;
+}
+
+.playlist-item .card .card-img {
+  position: relative;
+  align-items: end;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.playlist-item .card .card-img .play{
+  display: none;
+}
+
+.playlist-item .card:hover > .card-img .play{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  border-radius: 50px;
+  border-style: none;
+  padding: 6px;
+  margin: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #66D36E;
+}
+
+.playlist-item .card:hover {
+  background-color: #2d2c2c;
 }
 
 .playlist-item {
@@ -322,6 +402,11 @@
   font-weight:100;
 }
 
+.playlist .left-title .left-title-item .other:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .end{
   padding: 40px 0;
   margin-bottom: 66px;
@@ -347,6 +432,12 @@
   border-radius: 100%;
   background-color: #201f1f;
 }
+
+.social-item:hover{
+  cursor: pointer;
+  background-color: #4b4949;
+}
+
 .mainend {
   display: none;
 }
@@ -418,7 +509,7 @@
   .sidebar {
     z-index: 1;
     position: fixed;
-    height: calc(100% - 92px);
+    height: calc(100% - 89px);
     left: 0;
     background-color: #000000;
     width: 230px;
