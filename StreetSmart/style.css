@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+body:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+#panorama-2018 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}

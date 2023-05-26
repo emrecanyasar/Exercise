@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="lib/react/react.production.min.js"></script>
+    <script type="text/javascript" src="lib/react/react-dom.production.min.js"></script>
+    <script type="text/javascript" src="lib/openlayers/ol.js"></script>
+    <script type="text/javascript" src="lib/street-smart-api/StreetSmartApi.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="panorama-2018"></div>
+    <script>
+        // Başlangıç parametreleri
+        initialParameters = {
+            srs: "EPSG:5269",
+            locale: "tr",
+            viewerType: "PANORAMA",
+            username: "itfaiye",
+            password: "ibb2020",
+            apiKey: "y7gp-zstOrMtaLsByzgFin0RmHoZiD4RybwBKHARaPIBGHUtSP4JODURy7MZibMd",
+            configurationUrl: "https://streetsmartcbs360.ibb.gov.tr/atlas/configuration"
+        };
+
+        // Await yapabilmek için fonksiyon
+        async function open() {
+            // Panorama divini bul
+            let panoramaWindow = document.getElementById('panorama-2018');
+            // Parametrelere ekle
+            initialParameters.targetElement = panoramaWindow;
+            
+            // Init
+            await StreetSmartApi.init(initialParameters).then(
+                function () {
+                },
+                function (err) {
+                    console.log('Cannot initialize StreetSmart API. Error: ', err);
+                });
+
+            // Koordinatları al
+            const address = "9655654.06514677,4541886.457348777"
+            // Koordinatları aç
+            await StreetSmartApi.open(address,
+                {
+                    viewerType: 'PANORAMA',
+                    srs: initialParameters.srs
+                }).then((res) => {
+                    // Gelen cevaba bak
+                    if (res) {
+                        res.forEach(result => {
+                            // İçerisinden panorama viever'ı bul ve sakla
+                            if (result.getType() === '@@ViewerType/PANORAMA') {
+                                viewer = result;
+                            }
+                        })
+                    }
+                });
+        }
+
+        // Fonksiyonu çağır
+        open();
+
+    </script>
+</body>
+
+</html>
